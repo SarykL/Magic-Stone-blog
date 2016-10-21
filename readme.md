@@ -16,4 +16,4 @@
 
 
 ----------
-![Magic Stone blog](https://daks2k3a4ib2z.cloudfront.net/5730b555f586648f39fb5ff2/57d2c772dfabefe729e26ec6_magic-stone-sample.jpg)
+![screenshot](https://cloud.githubusercontent.com/assets/5090667/19601160/c608880a-97b0-11e6-85e3-558a64a2a07a.png)
