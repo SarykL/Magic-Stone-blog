@@ -1,0 +1,8 @@
+mixin navigation()
+	+b.NAV.navigation&attributes(attributes)
+		+e.wrapper.nav-wrapper.container
+			- var navItemList = ['News', 'Features', 'Prices', 'Blog', 'About']
+			+e.UL.list.hide-on-med-and-down.right
+				each navItem in navItemList
+					+e.item: +e.A(href='#' class='link'+ ((navItem == 'Blog') ? '_active' : ''))= navItem
+				
