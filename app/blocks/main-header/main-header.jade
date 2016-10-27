@@ -1,8 +1,7 @@
 include ../navigation/navigation
-include ../logo/logo
+include ../banner/banner
 
 mixin main-header()
 	+b.HEADER.main-header&attributes(attributes)
-		+e.top
-			+logo._top.left
-			+navigation
+		+navigation
+		+banner.parallax-container
