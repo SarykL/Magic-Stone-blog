@@ -1,0 +1,8 @@
+mixin banner()
+	+b.banner&attributes(attributes)
+		+e.text.container
+			+e.P.label.hide-on-med-and-down: | Magic blog
+			+e.H2.title.center: | Travel
+			+e.P.subtitle.center: | 83 Publications
+		+e.img.parallax
+			IMG(src='assets/images/banner.jpg')
