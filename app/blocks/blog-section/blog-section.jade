@@ -1,0 +1,35 @@
+mixin blog-section(posts)
+	+b.blog-section&attributes(attributes)
+		+e.row.row
+			each post in posts
+				+e.item.col.s12.m6.l4
+					+b.blog-post.large.card
+						+e.img.card-image
+							IMG(src= post.img)
+						+e.content.card-content
+							+e.date.center= post.date
+							+e.title.center= post.title
+						+e.expand.card-action.center
+							+e.A.link(href='#'): | Read more
+					
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post({"img": "assets/images/post-2.jpg"}).large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post({"img": "assets/images/post-3.jpg"}).large
+				
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
+			//- +e.item.col.s12.m6.l4
+			//- 	+blog-post.large
