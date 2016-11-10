@@ -1,0 +1,13 @@
+mixin pagination()
+	+b.UL.pagination&attributes(attributes)
+		+e.item.left: +e.A.link(href='#!'): | PREV
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 1
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 2
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 3
+		+e.item.hide-on-med-and-up: +e.A.link(href='#!'): | ...
+		+e.item._active: +e.A.link(href='#!'): | 4
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 5
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 6
+		+e.item.hide-on-small-only: +e.A.link(href='#!'): | 7
+		+e.item.hide-on-med-and-up: +e.A.link(href='#!'): | ...
+		+e.item.right: +e.A.link(href='#!'): | Next
