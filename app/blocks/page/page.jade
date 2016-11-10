@@ -1,6 +1,16 @@
 include ../main-header/main-header
+include ../content-section/content-section
+include ../blog-section/blog-section
+include ../pagination/pagination
+
+
 mixin page()
 	+b('body').page&attributes(attributes)
 		// Header section
 		+main-header
+		// Content section
+		main
+			+content-section.section
+				+blog-section(getData('posts')).container
+					+pagination.center
 		+scripts(['app.min.js'])
