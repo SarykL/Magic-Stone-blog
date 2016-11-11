@@ -2,6 +2,7 @@ include ../main-header/main-header
 include ../content-section/content-section
 include ../blog-section/blog-section
 include ../pagination/pagination
+include ../subscribe-section/subscribe-section
 
 
 mixin page()
@@ -11,6 +12,7 @@ mixin page()
 		// Content section
 		main
 			+content-section.section
+				// Blog section
 				+blog-section(getData('posts')).container
 					+pagination.center
 		+scripts(['app.min.js'])
