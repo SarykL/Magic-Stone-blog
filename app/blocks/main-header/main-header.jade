@@ -1,0 +1,7 @@
+include ../navigation/navigation
+include ../banner/banner
+
+mixin main-header()
+	+b.HEADER.main-header&attributes(attributes)
+		+navigation
+		+banner.parallax-container

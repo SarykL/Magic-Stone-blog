@@ -1,8 +1,8 @@
 import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
-import materialize from 'materialize-css';
+import '../blocks/banner/banner.js';
+import '../blocks/side-navigation/side-navigation.js';
 
 $(() => {
 	svg4everybody();
-	materialize();
 });

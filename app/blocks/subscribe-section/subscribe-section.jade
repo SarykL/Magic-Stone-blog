@@ -1,0 +1,8 @@
+include ../subscribe-form/subscribe-form
+mixin subscribe-section()
+	+b.subscribe-section&attributes(attributes)
+		+e.H3.heading.center: | Get New Posts Straight to Your Inbox
+		+e.form
+			+subscribe-form.center
+		+e.label.center: | No spam. We promise.
+		

@@ -1,3 +1,23 @@
+include ../main-header/main-header
+include ../content-section/content-section
+include ../blog-section/blog-section
+include ../pagination/pagination
+include ../subscribe-section/subscribe-section
+include ../page-footer/page-footer
+
+
+
 mixin page()
 	+b('body').page&attributes(attributes)
-		block
+		// Header section
+		+main-header
+		// Content section
+		MAIN.main
+			+content-section.section
+				// Blog section
+				+blog-section(getData('posts')).container
+					+pagination.center
+		// Footer section
+		+page-footer
+			+subscribe-section
+		+scripts(['app.min.js'])

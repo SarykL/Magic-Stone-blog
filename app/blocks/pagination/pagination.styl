@@ -1,0 +1,77 @@
+.pagination
+	display block
+	background-color #363a5b
+
+	&__link
+		padding-top 5px !important
+		font-family Karla !important
+		font-size 15px !important
+		font-weight 700 !important
+		color rgba(255, 255, 255, .4) !important
+
+	&__item
+		height 60px !important
+		line-height 60px !important
+
+		&:first-child
+			+mobile()
+				padding-left 10px
+			+tablet()
+				padding-left 20px
+			+desktop()
+				padding-left 30px
+
+			& .pagination__link
+				+mobile()
+					padding-right 15px
+				margin-top 15px
+				padding-top 0 !important
+				padding-right 30px
+				height 30px
+				color rgba(255, 255, 255, .75) !important
+				border-right 1px solid rgba(255, 255, 255, .2)
+
+				&:before
+					position relative
+					top 2px
+					left -10px
+					font-family 'Material Icons'
+					font-size 15px
+					content 'arrow_back'
+					color rgba(255, 255, 255, .4)
+
+		&:last-child
+			+mobile()
+				padding-right 10px
+			+tablet()
+				padding-right 20px
+			+desktop()
+				padding-right 30px
+
+			& .pagination__link
+				+mobile()
+					padding-left 15px
+				margin-top 15px
+				padding-top 0 !important
+				padding-left 30px
+				height 30px
+				color rgba(255, 255, 255, .75) !important
+				border-left 1px solid rgba(255, 255, 255, .2)
+
+				&:after
+					position relative
+					top 2px
+					right -10px
+					font-family 'Material Icons'
+					font-size 15px
+					content 'arrow_forward'
+					color rgba(255, 255, 255, .4)
+
+		&_active
+
+			& .pagination__link
+				size(40px)
+				color white !important
+				background-color #1cc9e4
+				border-radius 100% !important
+				box-shadow 0 1px 2px rgba(0, 0, 0, .16)

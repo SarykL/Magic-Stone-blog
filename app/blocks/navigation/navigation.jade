@@ -1,0 +1,13 @@
+include ../logo/logo
+include ../side-navigation/side-navigation
+
+mixin navigation()
+	+b.NAV.navigation&attributes(attributes)
+		+e.wrapper.nav-wrapper.container
+			+logo._top.brand-logo
+			- var navItemList = ['News', 'Features', 'Prices', 'Blog', 'About']
+			+e.UL.list.hide-on-med-and-down.right
+				each navItem in navItemList
+					+e.item: +e.A(href='#' class='link'+ ((navItem == 'Blog') ? '_active' : ''))= navItem
+			+side-navigation
+			+e.A.collapse.button-collapse(href='#' data-activates='nav-mobile'): +e.I.collapse-icon.material-icons: | menu
