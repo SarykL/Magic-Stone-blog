@@ -1,4 +1,5 @@
 include ../logo/logo
+include ../side-navigation/side-navigation
 
 mixin navigation()
 	+b.NAV.navigation&attributes(attributes)
@@ -8,4 +9,5 @@ mixin navigation()
 			+e.UL.list.hide-on-med-and-down.right
 				each navItem in navItemList
 					+e.item: +e.A(href='#' class='link'+ ((navItem == 'Blog') ? '_active' : ''))= navItem
-				
+			+side-navigation
+			+e.A.collapse.button-collapse(href='#' data-activates='nav-mobile'): +e.I.collapse-icon.material-icons: | menu

@@ -2,5 +2,5 @@ import $ from 'jquery';
 import 'materialize-css';
 
 $(() => {
-	$('.parallax').parallax();
+	$('.button-collapse').sideNav();
 });

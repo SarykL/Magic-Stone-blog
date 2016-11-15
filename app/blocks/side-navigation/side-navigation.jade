@@ -1,0 +1,5 @@
+- var navItemList = ['News', 'Features', 'Prices', 'Blog', 'About']
+mixin side-navigation()
+	+b.UL.side-navigation.side-nav#nav-mobile&attributes(attributes)
+		each navItem in navItemList
+			+e.item: +e.A(href='#' class='link'+ ((navItem == 'Blog') ? '_active' : ''))= navItem
